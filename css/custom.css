@@ -1,0 +1,11 @@
+.r-banner{
+	background-image: url(../images/comm.jpg);
+	height: 200px;
+}
+.r-banner h1,.r-banner h2,.r-banner h3{
+	color:#fff;
+}
+.r-inner-banner{
+	margin-top: 2em;
+	color:#fff;
+}
