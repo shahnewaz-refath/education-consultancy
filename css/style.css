@@ -15,8 +15,10 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  color: gray;
-  background: #fff; }
+  color: #333333;
+  background: #fff;
+  /*padding-top: 145px; */
+}
 
 #page {
   position: relative;

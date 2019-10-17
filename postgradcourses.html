@@ -3,11 +3,13 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Eskwela Template</title>
+	<title>Overseas Higher Education Solution</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/icon" href="images/Logo.png"/>
 
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -27,6 +29,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
@@ -60,17 +63,18 @@
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
+		<nav class="colorlib-nav navbar-fixed-top" role="navigation">
 			<div class="upper-menu">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-sm-12 text-right">
 							<p>
 								<ul class="colorlib-social-icons">
-									<li><i class="icon-phone"></i> +953012 3654 896 </li>
-									<li><i class="icon-envelope"></i> support@colorlib.com</li>
+									<li style="color: red;"><i class="fas fa-phone-alt"></i> Hotline:  +880-1711-296646</li>
+									<li><i class="fas fa-phone-alt"></i> +880-31-658767</li>
+									<li><i class="far fa-envelope-open"></i> info@ohesbd.com</li>
 									<!-- <li><a href="#"><i class="icon-twitter"></i></a></li> -->
-									<li><a href="#"><i class="icon-facebook"></i></a></li>
+									<li><a title="facebook page" href="https://www.facebook.com/Overseas-Higher-Education-Solution-106186254083624/"><i style = "color:#fff;" class="fab fa-facebook-square"></i> Facebook Page</a></li>
 									<!-- <li><a href="#"><i class="icon-linkedin"></i></a></li>
 									<li><a href="#"><i class="icon-dribbble"></i></a></li> -->
 								</ul>
@@ -79,58 +83,196 @@
 					</div>
 				</div>
 			</div>
-			<div class="top-menu">
-				<div class="container">
+			<div class="ctop-menu">
+				<div class="customcontainer">
 					<div class="row">
-						<div class="col-md-4">
-							<div id="colorlib-logo"><a href="index.html">Company name</a></div>
+						<div class="col-md-6">
+							<div id="custom-logo"><a href="index.php"><img class = "c-logo" src="images/Logo.png"><span id = "logospan">Overseas Higher Education Solution</span></a></div>
 						</div>
-						<div class="col-md-8 text-right menu-1">
-							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
+						<div class="col-md-6 text-right menu-1">
+							<ul id = "ctopul">
+								<li ><a href="index.php">Home</a></li>
 								<li class="has-dropdown">
-									<a href="#">Courses</a>
+									<a href="#">Courses <i class="fas fa-caret-down"></i></a>
 									<ul class="dropdown">
 										<li><a href="undergradcourses.html">Undergraduate</a></li>
-										<li><a href="postgradcourses.html">Post Graduate</a></li>
-										<li><a href="specialcourses.html">Special Courses</a></li>
+										<li id = "homeindex"><a href="postgradcourses.html">Post Graduate</a></li>
+										<li><a href="othercourses.html">Other Courses</a></li>
 									</ul>
 								</li>
 								<li><a href="universities.html">Universities</a></li>
-								<li><a href="about.html">About us</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="gallery.php">Gallery</a></li>
+								<li><a href="about.php">About us</a></li>
+								<li><a href="contact.html">Contact us</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</nav>
-			<div class ="r-banner">
-				<ul class="slides">
-			   	<li >
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-md-offset-3">
-				   				<div class="text-center r-inner-banner">
-				   					<h1 >About Us</h1>
-				   					<h2 ><span><a href="index.html">Home</a> | Postgraduate Courses</span></h2>
-				   				</div>
-				   			</div>
-				   		</div>
+		<div class ="r-banner cbanners">
+			<ul class="slides">
+		   	<li >
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-6 col-sm-12 col-md-offset-3">
+			   				<div class="text-center r-inner-banner">
+			   					<h1 >Courses</h1>
+			   					<h2 ><span><a href="index.html">Home</a> | Postgraduate Courses</span></h2>
+			   				</div>
+			   			</div>
 			   		</div>
-			   	</li>
-			  	</ul>
-		  	</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
 		
-		<div id="colorlib-about" class="colorlib-light-grey">
+		<div id="ucourses" class="uncourses">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 text-center">
-						<h1>Will Be updated as Instruction/Given Data</h1>
+						<h1>Here are some popular postgraduate courses</h1>
 					</div>
-					
-
+				</div>
+				<div class = "row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<h3>Engineering</h3>
+						<ul class="fa-ul">
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Aerospace Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Biomedical Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Chemical and Materials Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Civil Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Electrical Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Electronic Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Environmental Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>General Engineering and Technology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Manufacturing and Production</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Marine Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Mechanical Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Metallurgy</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Mining and Oil & Gas Operations</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Power and Energy Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Quality Control</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Structural Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Telecommunications</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Vehicle Engineering</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Computer Science</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Computing</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>IT</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Multimedia</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Software</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<h3>Applied and pure science</h3>
+						<ul class="fa-ul">
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Astronomy</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Biology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Biomedical Sciences</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Chemistry</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Earth Sciences</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Environmental Sciences</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Food Science and Technology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>General Sciences</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Life Sciences</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Materials Sciences</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Mathematics</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Physical Geography</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Physics</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Sports Science</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<h3>Humanities</h3>
+						<ul class="fa-ul">
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Archaeology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Classics</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Cultural Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>English Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>General Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>History</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Languages</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Literature</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Museum Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Philosophy</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Regional Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Religious Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Civil Law</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Criminal Law</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>International Law</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Legal Advice</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Legal Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Public Law</li>
+						</ul>
+					</div>
+				</div>
+				<div class = "row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<h3>Business And Management</h3>
+						<ul class="fa-ul">
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Accounting</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Business Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>E-Commerce</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Entrepreneurship</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Finance</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Human Resource Management</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Management</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Marketing</li> 
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Office Administration</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Quality Management</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Retail</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Transportation and Logistics</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<h3>Health and Medicine</h3>
+						<ul class="fa-ul">
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Complementary Health</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Counselling</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Dentistry</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Health Studies</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Health and Safety</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Medicine</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Midwifery</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Nursing</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Nutrition and Health</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Ophthalmology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Pharmacology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Physiology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Physiotherapy</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Psychology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Public Health</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<h3>Other Postgraduate Courses</h3>
+						<ul class="fa-ul">
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Architecture</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Built Environment</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Construction</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Maintenance Services</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Planning</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Property Management</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Surveying</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Agriculture</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Farm Management</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Horticulture</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Plant and Crop Sciences</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Veterinary Medicine</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Sociology</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Economics</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Politics</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Public Administration</li>
+							<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Social Science</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center" style = "background-color: #DDFFCC;color:red;border-radius: 10px;">
+						<h3 style = "padding: 0.3em 0.3em;margin: 0px 0px;font-family: Arial;">Please Visit our regional office or contact us to know more about courses to study abroad</h3>
+					</div>
 				</div>
 			</div>
 		</div>	
@@ -139,14 +281,11 @@
 			<div class="container">
 				<div class="row row-pb-md">
 					<div class="col-md-4 colorlib-widget text-center">
-						<h4>About Eskwela</h4>
-						<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+						<h4>About OHES</h4>
+						<p>One stop education solution for home & abroad. One of the best education consultancy firm of bangladesh. Here we assure you quality service. We are professional and reliable. </p>
 						<p>
 							<ul class="colorlib-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a title="facebook page" href="https://www.facebook.com/Overseas-Higher-Education-Solution-106186254083624/"><i style = "color:#3B5998;" class="fab fa-facebook-square"></i></a></li>
 							</ul>
 						</p>
 					</div>
@@ -154,9 +293,9 @@
 						<h4>Quick Links</h4>
 						<p>
 							<ul class="colorlib-footer-links">
-								<li><a href="#"><i class="icon-check"></i> About Us</a></li>
-								<li><a href="#"><i class="icon-check"></i> Courses</a></li>
-								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
+								<li><a href="#"><i class="far fa-check-circle"></i> About Us</a></li>
+								<li><a href="#"><i class="far fa-check-circle"></i> Courses</a></li>
+								<li><a href="#"><i class="far fa-check-circle"></i> Contact</a></li>
 							</ul>
 						</p>
 					</div>
@@ -164,10 +303,13 @@
 					<div class="col-md-4 colorlib-widget text-center">
 						<h4>Contact Info</h4>
 						<ul class="colorlib-footer-links">
-							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
-							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
-							<li><a href="http://luxehotel.com"><i class="icon-location4"></i> yourwebsite.com</a></li>
+							<li><i class="far fa-address-card"></i>&nbsp 
+								IFCO COMPLEX (5TH FLR),1147 EAST NASIRABAD,CDA AVENUE (GEC CIRCLE),CHATTOGRAM.BANGLADESH
+								Chittagong
+						    </li>
+							<li><a href="tel://+880-31-658767"><i class="fas fa-phone-alt"></i> +880-31-658767</a></li>
+							<li><a href="mailto:info@ohesbd.com"><i class="far fa-envelope-open"></i> info@ohesbd.com</a></li>
+							<li><a href="http://ohesbd.com"><i class="fas fa-globe"></i> ohesbd.com</a></li>
 						</ul>
 					</div>
 				</div>
@@ -178,7 +320,7 @@
 						<div class="col-md-12 text-center">
 							<p>
 								<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-									Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed By <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Nobody</a>
+									Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved to OHES| Developed By <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Refath</a>
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 								</small>
 								<br> 
@@ -216,6 +358,9 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
+	<script type="text/javascript">
+		$('#homeindex').addClass('active');
+    </script>
+
 	</body>
 </html>
-

@@ -1,0 +1,630 @@
+<?php
+	require_once('database.php');
+	$getdata = "SELECT * FROM feedback";
+    $res = mysqli_query($database->connection,$getdata);
+?>
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Overseas Higher Education Solution</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/icon" href="images/Logo.png"/>
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav navbar-fixed-top" role="navigation">
+			<div class="upper-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12 text-right">
+							<p>
+								<ul class="colorlib-social-icons">
+									<li style="color: red;"><i class="fas fa-phone-alt"></i> Hotline:  +880-1711-296646</li>
+									<li><i class="fas fa-phone-alt"></i> +880-31-658767</li>
+									<li><i class="far fa-envelope-open"></i> info@ohesbd.com</li>
+									<!-- <li><a href="#"><i class="icon-twitter"></i></a></li> -->
+									<li><a title="facebook page" href="https://www.facebook.com/Overseas-Higher-Education-Solution-106186254083624/"><i style = "color:#fff;" class="fab fa-facebook-square"></i> Facebook Page</a></li>
+									<!-- <li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-dribbble"></i></a></li> -->
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ctop-menu">
+				<div class="customcontainer">
+					<div class="row">
+						<div class="col-md-6">
+							<div id="custom-logo"><a href="index.php"><img class = "c-logo" src="images/Logo.png"><span id = "logospan">Overseas Higher Education Solution</span></a></div>
+						</div>
+						<div class="col-md-6 text-right menu-1">
+							<ul id = "ctopul">
+								<li id = "homeindex"><a href="index.php">Home</a></li>
+								<li class="has-dropdown">
+									<a href="#">Courses <i class="fas fa-caret-down"></i></a>
+									<ul class="dropdown">
+										<li><a href="undergradcourses.html">Undergraduate</a></li>
+										<li><a href="postgradcourses.html">Post Graduate</a></li>
+										<li><a href="othercourses.html">Other Courses</a></li>
+									</ul>
+								</li>
+								<li><a href="universities.html">Universities</a></li>
+								<li><a href="gallery.php">Gallery</a></li>
+								<li><a href="about.php">About us</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<aside id="colorlib-hero" class = "cslider">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(images/slide1.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>Education is the Key to Success</h1>
+				   					<p><a href="contact.html" class="btn btn-primary btn-lg btn-learn">Know more..</a></p>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/slide2.jpeg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>An invesmet in knowledge pays the best interest</h1>
+				   					<p><a href="contact.html" class="btn btn-primary btn-lg btn-learn">Know more..</a></p>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/slide3.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>Develop a Passion for learning.if you do,you will never cease to grow</h1>
+				   					<p><a href="contact.html" class="btn btn-primary btn-lg btn-learn">Know more..</a></p>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/slide4.png);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>The aim of education is the knowledge not of facts but of values</h1>
+				   					<p><a href="contact.html" class="btn btn-primary btn-lg btn-learn">Know more..</a></p>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>	
+			  	</ul>
+		  	</div>
+		</aside>
+		
+		<div id="colorlib-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 intro-wrap">
+						<div class="intro-flex">
+							<div class="one-third color-1 animate-box">
+								<span class="icon"><i class="flaticon-open-book"></i></span>
+								<div class="desc">
+									<h3>Undergraduate Program</h3>
+									<p><a href="undergradcourses.html" class="view-more">View More</a></p>
+								</div>
+							</div>
+							<div class="one-third color-2 animate-box">
+								<span class="icon"><i class="flaticon-open-book"></i></span>
+								<div class="desc">
+									<h3>Postgraduate Program</h3>
+									<p><a href="postgradcourses.html" class="view-more">View More</a></p>
+								</div>
+							</div>
+							<div class="one-third color-3 animate-box">
+								<span class="icon"><i class="flaticon-open-book"></i></span>
+								<div class="desc">
+									<h3>Other Courses</h3>
+									<p><a href="othercourses.html" class="view-more">View More</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="about-desc animate-box">
+							<h2>Welcome to Overseas Higher Education Solution</h2>
+							<p>Overseas higher education solution is an education agent. We provide helps and advice to students who wants to pursue higher education abroad. </p>
+							<div class="fancy-collapse-panel">
+	                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	                     <div class="panel panel-default">
+	                         <div class="panel-heading" role="tab" id="headingOne">
+	                             <h4 class="panel-title">
+	                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why choose us?
+	                                 </a>
+	                             </h4>
+	                         </div>
+	                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+	                             <div class="panel-body">
+	                                 <div class="row">
+									      		<div class="col-md-6">
+									      			<p>We believe that education is a fundamental right and everyone should have access to quality higher education. </p>
+									      		</div>
+									      		<div class="col-md-6">
+									      			<p>We work in the best interest of both students and our partner universities and colleges. </p>
+									      		</div>
+									      	</div>
+	                             </div>
+	                         </div>
+	                     </div>
+	                     <div class="panel panel-default">
+	                         <div class="panel-heading" role="tab" id="headingTwo">
+	                             <h4 class="panel-title">
+	                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What we do?
+	                                 </a>
+	                             </h4>
+	                         </div>
+	                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	                             <div class="panel-body">
+	                                 <p>We strive to create oppurtunities for those who have genuine aspiration and honest intention, who seek excellent quality in tution, student services, qualifications and career prospects post qualification.</p>
+	                             </div>
+	                         </div>
+	                     </div>
+	                     <div class="panel panel-default">
+	                         <div class="panel-heading" role="tab" id="headingThree">
+	                             <h4 class="panel-title">
+	                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Services
+	                                 </a>
+	                             </h4>
+	                         </div>
+	                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+	                             <div class="panel-body">
+	                                 <ul class="fa-ul">
+	                                 	<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Student counselling</li>
+	                                 	<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Student Visa Processing</li>
+	                                 	<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Create Study oppurtunies for students in abroad. </li>
+	                                 	<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Also providing proper guidelines for people to study in abroad. </li>
+	                                 	<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Other related services. </li>
+	                                 </ul>	
+	                             </div>
+	                         </div>
+	                     </div>
+	                  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+		<div id="colorlib-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Some Popular Countries For Study</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "cuk">
+							<span class="">
+								<img src="images/united-kingdom.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Uk</h3>
+								<p class="pcountry">UK higher education degrees and qualifications are recognised by employers and academics worldwide. Students get the opportunity to develop the skills, knowledge, critical thinking, and connections to drive forward their careers.They also have a reputation for world-class research.<br>
+								<a href="uk.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "caus">
+							<span class="">
+								<img src="images/australia.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Australia</h3>
+								<p class="pcountry">Australia is currently the third most popular destination for international students in the English-speaking world, behind the United States and the UK. Many international students choose to study there because of the cultural diversity, friendly natives, and high quality of education.<br>
+								<a href="australia.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "cger">
+							<span class="">
+								<img src="images/germany.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Germany</h3>
+								<p class="pcountry">There are many reasons why a student finds Germany to be the ideal foreign destination for higher studies. The quality of higher education in Germany is among the best in the world. Germany itself has become synonymous with high quality. The long tradition of education in Germany is widely respected.<br>
+								<a href="germany.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "cpol">
+							<span class="">
+								<img src="images/poland.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Poland</h3>
+								<p class="pcountry">More and more students each year are choosing to study abroad in Poland. These students are drawn to its high-quality education institutions, low tuition fees, and equally low cost of living. Poland has been a nation of survivors since the foundation of the first Polish state more than 1,000 years ago.<br>
+								<a href="poland.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "cfra">
+							<span class="">
+								<img src="images/france.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>France</h3>
+								<p class="pcountry">France is the ideal place to study abroad for your degree thanks to its rich culture, gastronomy, architecture, and thriving student life! Studying in France gives you the opportunity to learn the language and gain cultural perspective.<br>
+								<a href="france.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "cusa">
+							<span class="">
+								<img src="images/united-states.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Usa</h3>
+								<p class="pcountry">The United States is the number one and largest destination for international students seeking higher education overseas. The education system in USA is the most versatile and flexible higher education system for international students in the world.<br>
+								<a href="usa.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "ccan">
+							<span class="">
+								<img src="images/canada.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Canada</h3>
+								<p class="pcountry">Canada is a bilingual country, which makes studying here an excellent opportunity to develop your language skills and boost your prospects for an interesting career. Coursework in French and English is an integral part of Canada's educational system, which enriches its cultural and community life.<br>
+								<a href="canada.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "cswe">
+							<span class="">
+								<img src="images/sweden.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Sweden</h3>
+								<p class="pcountry">Studying in Sweden is different from studying in other countries because Swedish universities have an open climate with a strong focus on group work. The Swedish education system focuses more on your academic interests than pushing you to achieve a grade.<br>
+								<a href="sweden.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "chun">
+							<span class="">
+								<img src="images/hungary.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Hungary</h3>
+								<p class="pcountry">Hungarian higher education has gained great credibility over the years in, among other things, it's very strong tradition in the sciences. Beyond high-quality education, Hungary also offers a lively and welcoming culture, a fascinating history and beautiful cities.<br>
+								<a href="hungary.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "cmal">
+							<span class="">
+								<img src="images/malaysia.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Malaysia</h3>
+								<p class="pcountry">Malaysia offers international students many options of quality education programmes at an affordable cost. In addition, Malaysia is becoming a preferred country for foreign investment in the higher education sector. Due to all these reasons, students want to study in Malaysia to further their dreams.<br>
+								<a href="malaysia.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "cchi">
+							<span class="">
+								<img src="images/china.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>China</h3>
+								<p class="pcountry">Merging the knowledge of both China and their home countries will give students an advantage to explore potential opportunities in China for the future. China has become one of the most popular study abroad destinations for international students because of its long history and exciting culture.<br>
+								<a href="china.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services rcountry" id = "clit">
+							<span class="">
+								<img src="images/lithuania.png" style="width:5em;height: 5em;margin-top: -4em;">
+							</span>
+							<div class="desc">
+								<h3>Lithuania</h3>
+								<p class="pcountry">A degree from Lithuania will help you gain a job all over the world. Lithuania is one of the best places to pursue higher education. It also has many places for tourist attractions to occupy your free time. Living cost is less comparable to other EU countries.<br>
+								<a href="lithuania.html" class="btn btn-primary">Know More..</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/counter.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-4 col-sm-6 animate-box">
+								<div class="counter-entry">
+									<span class="icon"><i class="flaticon-book"></i></span>
+									<div class="desc">
+										<span class="colorlib-counter-label">More than</span>
+										<span class="colorlib-counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50"></span>
+										<span class="colorlib-counter-label">Courses</span>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-md-3 col-sm-6 animate-box">
+								<div class="counter-entry">
+									<span class="icon"><i class="flaticon-student"></i></span>
+									<div class="desc">
+										<span class="colorlib-counter js-counter" data-from="0" data-to="300" data-speed="5000" data-refresh-interval="50"></span>
+										<span class="colorlib-counter-label">Students</span>
+									</div>
+								</div>
+							</div> -->
+							<div class="col-md-4 col-sm-6 animate-box">
+								<div class="counter-entry">
+									<span class="icon"  style="margin-top: 0.7em;"><i class="fas fa-university"></i></span>
+									<div class="desc">
+										<span class="colorlib-counter-label">More than</span>
+										<span class="colorlib-counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50"></span>
+										<span class="colorlib-counter-label">Universities</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box">
+								<div class="counter-entry">
+									<span class="icon"><i class="flaticon-earth-globe"></i></span>
+									<div class="desc">
+										<span class="colorlib-counter-label">More than</span>
+										<span class="colorlib-counter js-counter" data-from="0" data-to="50" data-speed="5000" data-refresh-interval="50"></span>
+										<span class="colorlib-counter-label">Countries</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        <br>
+		<div id="colorlib-testimony" class="testimony-img" style="background-image: url(images/comm.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>What Are The People Says About Us</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="row animate-box">
+							<div class="owl-carousel1">
+								<?php
+                                    while($row = mysqli_fetch_array($res)){
+                                ?>
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span><?php echo $row["name"]; ?></span>
+												<p><?php echo $row["message"]; ?></p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url(images/feedback/<?php echo $row["picture"]; ?>);"></div>
+										</div>
+									</div>
+								</div>
+								<?php
+									}
+								?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section id="hotlineabt">
+			<div class="container">
+			               <!-- Recent Works -->
+			<div class="row" id="hotline">
+			    <div class="row">
+			         <!-- <div class="col-md-1 text-center hotlineitem">
+			           HOTLINE
+			         </div> -->
+			         <div class="col-md-4 text-center hotlinecall">
+			         	HOTLINE Call Now :<br>  
+			            <!-- <i class="fa fa-phone hoticon" aria-hidden="true"></i> --> <h3>+880-1711-296646</h3>
+			           
+			         </div>
+			         <div class="col-md-4 text-center hotlineitem">
+			         	Mail Now : <br>
+			            <!-- <i class="fa fa-envelope hoticon" aria-hidden="true"></i>&nbsp; -->info.fhes@gmail.com | info@ohesbd.com
+			         </div>
+			         <div class="col-md-4 text-center hotlineitem">
+			         	<a style = "color:#BA07BE;font-size: 1.5em;" title="facebook page" href="https://www.facebook.com/Overseas-Higher-Education-Solution-106186254083624/"><i class="fab fa-facebook-square fa-3x"></i></a>
+			         </div>
+			    </div>
+			</div>
+			<!-- blank -->
+			</div>
+		</section>
+	
+		<footer id="colorlib-footer">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-4 colorlib-widget text-center">
+						<h4>About OHES</h4>
+						<p>One stop education solution for home & abroad. One of the best education consultancy firm of bangladesh. Here we assure you quality service. We are professional and reliable. </p>
+						<p>
+							<ul class="colorlib-social-icons">
+								<li><a title="facebook page" href="https://www.facebook.com/Overseas-Higher-Education-Solution-106186254083624/"><i style = "color:#3B5998;" class="fab fa-facebook-square"></i></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-md-4 colorlib-widget text-center">
+						<h4>Quick Links</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#"><i class="far fa-check-circle"></i> About Us</a></li>
+								<li><a href="#"><i class="far fa-check-circle"></i> Courses</a></li>
+								<li><a href="#"><i class="far fa-check-circle"></i> Contact</a></li>
+							</ul>
+						</p>
+					</div>
+
+					<div class="col-md-4 colorlib-widget text-center">
+						<h4>Contact Info</h4>
+						<ul class="colorlib-footer-links">
+							<li><i class="far fa-address-card"></i>&nbsp 
+								IFCO COMPLEX (5TH FLR),1147 EAST NASIRABAD,CDA AVENUE (GEC CIRCLE),CHATTOGRAM,BANGLADESH
+						    </li>
+							<li><a href="tel://+880-31-658767"><i class="fas fa-phone-alt"></i> +880-31-658767</a></li>
+							<li><a href="mailto:info@ohesbd.com"><i class="far fa-envelope-open"></i> info@ohesbd.com</a></li>
+							<li><a href="http://ohesbd.com"><i class="fas fa-globe"></i> ohesbd.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+									Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved to OHES| Developed By <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Refath</a>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</small>
+								<br> 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	<script type="text/javascript">
+		$('#homeindex').addClass('active');
+    </script>
+
+	</body>
+</html>
+
