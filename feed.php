@@ -45,7 +45,7 @@ if(isset($_POST["submit"])) {
             $insert = "INSERT INTO feedback(name,email,occupation,message,picture,datetime)VALUES('$name','$email','$occupation','$message','$image',NOW())";
             $res = mysqli_query($database->connection,$insert);
             if($res){
-                echo "The feedback has been uploaded. Thank You for your valuable words about us.";
+                header('Location: successfeed.html');
             }else{
                 echo "The feedback has not been uploaded. Please try again.";
             }

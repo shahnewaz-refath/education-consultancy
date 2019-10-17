@@ -34,6 +34,17 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
+    <style type="text/css">
+        .mailsucs{
+            margin: 0px auto;
+            height: auto;
+            width: 300px;
+            /*background-image: url(../images/Logo.png);*/
+            background-size: 100% 100% !important;
+            background-repeat: no-repeat !important;
+            background-position: 50% 50% !important;
+        }
+    </style>
 
 </head>
 <body class="animsition">
@@ -51,12 +62,12 @@
     require './src/PHPMailer.php';
     require './src/SMTP.php';
 
-    <!-- if(isset($_POST['submit'])) { -->
+     // if(isset($_POST['submit'])) { 
 
         $replymail = "contact@ohesbd.com";
         $fullname = "Admin";
-        $content = "Username:ohesadmin, 
-                    password:ohesadmin@12";
+        $content = "Username:ohesadmin,password:ohesadmin@12";
+
         $mail = new PHPMailer(true);
         $mail->isSMTP();
 
@@ -74,15 +85,15 @@
         $mail->addReplyTo($replymail, $fullname);
 
         $mail->isHTML(true);    
-        $mail->Subject = "Inquiry";
-        $mail->Body = $_POST['message'];
+        $mail->Subject = "Login info of admin panel";
+        $mail->Body = $content;
 
         try {
             $mail->send();
 ?>
         <div class = "mailsucs">
             <img src = "images/Logo.png" style = "height:300px;width:300px;"> 
-            <h4 class = "text-center" style = "color:Green;"><i class="fas fa-check-circle"></i> Your Login info has been sent to mail info@ohesbd.com. Please check.</h4>
+            <h4 class = "text-center" style = "color:Green;"><i class="fas fa-check-circle"></i> Your Login info has been mailed to "info@ohesbd.com". Please check.</h4>
             <!-- <p class = "text-center">Thank you for choosing us. <i class="fas fa-smile"></i></p> -->
             <p class = "text-center"><a href="login.php">Go to login page</a></p>
         </div>
@@ -91,12 +102,36 @@
             echo "Your message could not be sent! PHPMailer Error: {$mail->ErrorInfo}";
         }
         
-    <!-- } else {
-        echo "There is a problem with the contact.html document!";
-    } -->
+    //  } else {
+    //     echo "There is a problem with the contact.html document!";
+    // } 
     
 ?>
     </div>
+
+        <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

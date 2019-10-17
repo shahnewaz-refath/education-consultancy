@@ -53,9 +53,12 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
